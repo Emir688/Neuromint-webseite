@@ -1,159 +1,18 @@
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroMint – Whitepaper integriert + Smooth Scrolling + Footer</title>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      padding: 20px;
-      background-color: #0a0a0a;
-      color: #00ffcc;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-    nav {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    nav a {
-      margin: 0 20px;
-      color: #00ffcc;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
-    h1, h2 {
-      color: #ffffff;
-    }
-    p, ul, li {
-      font-size: 1.1em;
-    }
-    section {
-      margin-top: 40px;
-    }
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      color: #555;
-      font-size: 0.9em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>NeuroMint Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<nav>
-  <a href="#home">Home</a>
-  <a href="#whitepaper">Whitepaper</a>
-</nav>
-
-<section id="whitepaper">
-
-  <h1>Mini Whitepaper</h1>
-
-
-
-  <h2>1. Introduction (Vision)</h2>
-
-  <p>NeuroMint represents the next evolution of Web3: decentralized AI power for everyone. Our goal is to make the potential of artificial intelligence more open, fair, and transparent through blockchain technology. We believe AI shouldn’t belong to tech giants – it should belong to the community.</p>
-
-
-
-  <h2>2. Problem & Solution</h2>
-
-  <p><strong>Problem:</strong><br>Artificial intelligence is currently centralized (Google, OpenAI, Meta). Control over AI lies in the hands of a few corporations. Web3 infrastructure is often too complex and inaccessible.</p>
-
-  <p><strong>Solution:</strong><br>NeuroMint provides a decentralized platform for AI tools. Users can use, build, and improve AI – powered by the NeuroMint Token (NMNT). Everything is open, transparent, and community-driven.</p>
-
-
-
-  <h2>3. Technology</h2>
-
-  <ul>
-
-    <li>Blockchain-based (scalable Layer-2 solution)</li>
-
-    <li>AI services via decentralized networks</li>
-
-    <li>Privacy-first AI focus & open source infrastructure</li>
-
-    <li>Smart contracts manage usage, payments & development</li>
-
-  </ul>
-
-
-
-  <h2>4. Tokenomics</h2>
-
-  <p><strong>Total supply:</strong> 1,000,000,000 NMNT</p>
-
-  <p><strong>Distribution:</strong></p>
-
-  <ul>
-
-    <li>50% Community airdrop & rewards</li>
-
-    <li>20% Team (with 2-year vesting)</li>
-
-    <li>20% Ecosystem development</li>
-
-    <li>10% Reserve</li>
-
-  </ul>
-
-  <p><strong>Use cases:</strong></p>
-
-  <ul>
-
-    <li>Access to AI tools</li>
-
-    <li>Staking for governance</li>
-
-    <li>Payments within the platform</li>
-
-  </ul>
-
-
-
-  <h2>5. Roadmap (Next 6–12 Months)</h2>
-
-  <ul>
-
-    <li>Q2 2025 – Website launch & community building</li>
-
-    <li>Q3 2025 – Token airdrop & first AI tool release</li>
-
-    <li>Q4 2025 – Platform expansion (AI task job market)</li>
-
-    <li>Q1 2026 – Mobile app & partnerships</li>
-
-  </ul>
-
-
-
-  <h2>6. Contact</h2>
-
-  <p><strong>Website:</strong> <a href="https://neuromint.xyz">neuromint.xyz</a></p>
-
-  <p><strong>Social Media:</strong> (Coming soon)</p>
-
-  <p><strong>Contact Email:</strong> (Coming soon)</p>
-
-
-
-  <p style="margin-top:40px;">Together, we create the future of decentralized intelligence.<br>#NeuroMint #AI #Web3 #Future</p>
-
-</section>
-
-
-
-<footer>
-  © 2025 NeuroMint | All Rights Reserved
-</footer>
-
+    <div class="container">
+        <h1>NeuroMint AI Prompt Generator</h1>
+        <textarea id="userInput" placeholder="Gib hier dein Thema ein..."></textarea>
+        <button onclick="generate()">Generate Prompt</button>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
